@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="MainSuite">
+  <listeners>
+  <listener class-name="TestNGpractice.Testlistner"/>
+  <listener class-name="TestNGpractice.Reporterlister"/>
+  </listeners>
+    <test name="chrometest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="TestNGpractice.CrossBrowserTest"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="edgetest">
+      <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="TestNGpractice.CrossBrowserTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="itest">
+  <classes>
+  <class name="TestNGpractice.iTestlistner"/>
+  </classes>
+  </test >
+  </suite> <!-- Suite -->

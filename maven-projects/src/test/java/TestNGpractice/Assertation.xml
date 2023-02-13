@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">  
+<parameter name="lounch" value="chrome"></parameter>
+  <classes>
+  <class name="TestNGpractice.Assertationdemo"></class>
+  </classes>
+  </test><!-- Test -->
+<parameter name="lounch" value="edge"></parameter>
+  <test thread-count="5" name="Test2">
+<classes>
+  <class name="TestNGpractice.Assertationdemo"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
